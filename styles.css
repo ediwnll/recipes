@@ -1,0 +1,97 @@
+html{
+    min-height: 100vh;
+    background: rgba(194, 87, 87, 0.867);
+}
+body {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#pork, #steak, #lamb, #chicken  {
+    position:relative;
+    width: 18vw;
+    height: 16vw;
+    display: inline;
+    object-fit: cover;
+    pointer-events: auto;
+    box-shadow: 0 0 2vw white;
+    
+}
+#middle{
+    display: inline-table;
+    text-align: center;
+    position: relative;
+    transform: translateY(-1.7vw);
+}
+#left  {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+#right   {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+#header {
+    position: relative;
+}
+#title{
+    position: relative;
+    font-family: "Norse";
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+    font-size: 4vw;
+    text-align: center;
+    bottom: -2vw;
+    
+    
+}
+#underline  {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    filter: invert(100%);
+    
+}
+
+#topLeft, #bottomLeft   {
+    margin: 0 auto;
+    transition: 0.5s;
+    position: relative;
+    
+}
+#topRight, #bottomRight   {
+    margin: 0 auto;
+    transition: 0.5s;
+    position: relative;
+    
+}
+
+#TOP    {
+    margin: 0.5vw 0;
+    width: 17vw;
+    display: block;
+    transform: translateX(1.5%);
+}
+#descriptionContainer   {
+    position: absolute;
+    border: 0.25vw dotted white;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 50%;
+    bottom:10%;
+    transform: translate(50%);
+    width: 60%;
+}
